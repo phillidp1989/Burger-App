@@ -42,6 +42,23 @@ router.put("/api/burger/:id", async (req, res) => {
     } catch (err) {
         console.log("ERROR - burger_controller.js - router.put(/api/burger/:id): ", err);
 }
-})
+});
+
+router.delete("/api/burger/:id", async (req, res) => {
+    try {
+        const burgerId = req.params.id;
+        const data = await burger.delete(burgerId);
+        
+        if (result.affectedRows == 0) {
+            // If no rows were changed, then the ID must not exist, so 404
+            return res.status(404).end();
+          } else {
+            res.status(200).end();
+          }
+      
+    } catch (err) {
+        console.log("ERROR - burger_controller.js - router.delete(/api/burger/:id): ", err);
+    }
+});
 
 module.exports = router;
