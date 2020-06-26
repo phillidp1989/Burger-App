@@ -1,3 +1,5 @@
+/* Header styling */
+
 header {    
     text-align: center;
     height: 250px;
@@ -19,3 +21,33 @@ header > h1 {
 .fa-hamburger {
     color: #FFC72C;
 }
+
+/* Burger list styling */
+
+.burger-lists {    
+    margin: 30px 30px;
+    background-color: #FFC72C;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.list {
+    width: 60%;
+}
+
+.input-field label {
+    color: #000;
+  }
+
+  #devour {
+      margin-top: 10px;
+  }
+
+  form {
+      font-size: 20px !important;
+  }
+
+  .submit-btn {
+      text-align: center;
+  }
+
