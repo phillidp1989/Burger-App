@@ -1,3 +1,5 @@
+{{!-- Uneaten burger section --}}
+
 <div class="burger-lists">
     <div class="row">
         <div class="col s6">
@@ -13,21 +15,18 @@
                         <button class="waves-effect waves-light btn-small red darken-1" id="devour"
                             data-id="{{this.id}}">Devour!</button>
                     </div>
-                    
                 </div>
-                
                 {{/unless}}
                 {{/each}}
-
-
             </div>
         </div>
+
+    {{!-- Eaten burgers section --}}
 
         <div class="col s6">
             <div class="eaten">
                 <h2>Devoured Burgers</h2>
-        
-            {{#each burger}}
+                {{#each burger}}
                 {{#if this.devoured}}
                 <div class="row">
                     <div class="col s4 offset-s3">
@@ -37,19 +36,14 @@
                         <button class="waves-effect waves-light btn-small red darken-1" id="devour"
                             data-id="{{this.id}}"><i class="far fa-trash-alt"></i></button>
                     </div>
-                    
                 </div>
-                
                 {{/if}}
                 {{/each}}
-
-                
             </div>
         </div>
     </div>
 
-
-
+    {{!-- New burger form --}}
     <div class="row">
         <form class="col s6 offset-s3 burger-form">
             <div class="row">

@@ -30,7 +30,7 @@ $(document).ready(() => {
             });
             location.reload();    
         } catch (err) {
-            console.log("ERROR - script.js - ajax-PUT: ", err);
+            console.log("ERROR - script.js - ajax-POST: ", err);
         }
         
     })
