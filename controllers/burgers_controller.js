@@ -49,7 +49,7 @@ router.delete("/api/burger/:id", async (req, res) => {
         const burgerId = req.params.id;
         const data = await burger.delete(burgerId);
         
-        if (result.affectedRows == 0) {
+        if (data.affectedRows == 0) {
             // If no rows were changed, then the ID must not exist, so 404
             return res.status(404).end();
           } else {
