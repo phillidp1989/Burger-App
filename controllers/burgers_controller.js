@@ -30,7 +30,9 @@ router.post("/api/burger", async (req, res) => {
 router.put("/api/burger/:id", async (req, res) => {
     try {
         const burgerId = req.params.id;
-        const data = await burger.update(true, burgerId);
+        const data = await burger.update(1, burgerId);
+        console.log("PUT data:" + data);
+        
         if (data.changedRows === 0) {
             res.status(404).end();
         } else {
