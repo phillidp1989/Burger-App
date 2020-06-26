@@ -1,0 +1,21 @@
+header {    
+    text-align: center;
+    height: 250px;
+    line-height: 250px;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #DA291C;
+    border-bottom: 15px solid #FFC72C;
+   
+}
+
+header > h1 {
+    color: #fff;
+}
+
+.fa-hamburger {
+    color: #FFC72C;
+}
