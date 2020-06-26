@@ -26,13 +26,24 @@
         <div class="col s6">
             <div class="eaten">
                 <h2>Devoured Burgers</h2>
-                {{#each burger}}
+        
+            {{#each burger}}
                 {{#if this.devoured}}
-                <p>{{this.burger_name}}<span><button data-id="{{this.id}}"><i
-                                class="fas fa-trash-alt"></i></button></span>
-                </p>
+                <div class="row">
+                    <div class="col s4 offset-s3">
+                        <p>{{this.burger_name}}</p>
+                    </div>
+                    <div class="col s2">
+                        <button class="waves-effect waves-light btn-small red darken-1" id="devour"
+                            data-id="{{this.id}}"><i class="far fa-trash-alt"></i></button>
+                    </div>
+                    
+                </div>
+                
                 {{/if}}
                 {{/each}}
+
+                
             </div>
         </div>
     </div>
@@ -40,10 +51,10 @@
 
 
     <div class="row">
-        <form class="col s6 offset-s3">
+        <form class="col s6 offset-s3 burger-form">
             <div class="row">
                 <div class="input-field col s11">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <textarea id="textarea1" class="materialize-textarea user-input"></textarea>
                     <label for="textarea1">Enter your burger name</label>
                 </div>
             </div>

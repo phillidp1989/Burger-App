@@ -21,7 +21,7 @@ const orm = {
     try {
       const queryString = `INSERT INTO ${tableInput} (${columnName}) VALUES ('${value}')`;
       const result = await queryAsync(queryString);
-      console.log(result);
+      return result;
     } catch (err) {
       console.log("ERROR - orm.js - insertOne(): ", err);
     }
@@ -30,7 +30,7 @@ updateOne: async function (tableInput, columnName, newVal, referenceCol, referen
   try {
     const queryString = `UPDATE ${tableInput} SET ${columnName} = '${newVal}' WHERE ${referenceCol} = '${referenceVal}'`;
     const result = await queryAsync(queryString);
-    console.log(result);
+    return result;
   } catch (err) {
     console.log("ERROR - orm.js - updateOne(): ", err);
   }
