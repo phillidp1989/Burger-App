@@ -35,6 +35,15 @@ updateOne: async function (tableInput, columnName, newVal, referenceCol, referen
     console.log("ERROR - orm.js - updateOne(): ", err);
   }
 },
+deleteOne: async function (tableInput, referenceCol, referenceVal) {
+  try {
+    const queryString = `DELETE FROM ${tableInput} WHERE ${referenceCol} = '${referenceVal}'`
+    const result = await queryAsync(queryString);
+    return result;
+  } catch (err) {
+    console.log("ERROR - orm.js - deleteOne(): ", err);
+  }
+}
 };
 
 module.exports = orm;

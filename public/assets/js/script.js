@@ -1,8 +1,7 @@
 $(document).ready(() => {
 
     // Add event listener on Devour button
-    $("#devour").on("click", async event => {
-        console.log(event.target);
+    $(".devour").on("click", async event => {        
         const id = $(event.target).data("id");
         try {
             await $.ajax("/api/burger/" + id, {
@@ -30,8 +29,20 @@ $(document).ready(() => {
             });
             location.reload();    
         } catch (err) {
-            console.log("ERROR - script.js - ajax-PUT: ", err);
-        }
+            console.log("ERROR - script.js - ajax-POST: ", err);
+        }        
+    });
+
+    $(".delete, .trash").on("click", async event => {       
         
+        const id = $(event.target).data("id");
+        try {
+            await $.ajax("/api/burger/" + id, {
+                type: "DELETE"
+            });
+            location.reload();
+        } catch (err) {
+            console.log("ERROR - script.js - ajax-DELETE: ", err);
+        }
     })
 })
