@@ -1,53 +1,75 @@
 /* Header styling */
 
-header {    
-    text-align: center;
-    height: 250px;
-    line-height: 250px;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background-color: #DA291C;
-    border-bottom: 15px solid #FFC72C;
-   
+body {
+  background: url("https://assets.londonist.com/uploads/2016/09/i875/electric.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header {
+  text-align: center;
+  height: 250px;
+  line-height: 250px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #da291c;
+  border-bottom: 15px solid #ffc72c;
 }
 
 header > h1 {
-    color: #fff;
+  color: #fff;
 }
 
 .fa-hamburger {
-    color: #FFC72C;
+  color: #ffc72c;
 }
 
 /* Burger list styling */
 
-.burger-lists {        
-    margin: 30px 30px;
-    background-color: #FFC72C;
-    border-radius: 10px;
-    text-align: center;
+.burger-lists {
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  font-family: 'Raleway', sans-serif; 
+  margin: 30px 30px;
+  background-color: #ffc72c;
+  border-radius: 10px;
+  text-align: center;
+}
+
+p {
+  font-family: 'Raleway', sans-serif; 
+  font-size: 20px;
 }
 
 .list {
-    width: 60%;
+  width: 60%;
 }
 
 .input-field label {
-    color: #000;
-  }
+  color: #000;
+}
 
-  #devour {
-      margin-top: 10px;
-  }
+.devour {
+  margin-top: 15px;
+}
 
-  form {
-      font-size: 20px !important;
-  }
+.delete {
+  margin-top: 15px;
+}
 
-  .submit-btn {
-      text-align: center;
-  }
+form {
+  font-size: 20px !important;
+}
 
+.submit-btn {
+  text-align: center;
+}
+
+label {
+    font-size: 20px !important;
+}
