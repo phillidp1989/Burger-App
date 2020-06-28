@@ -30,7 +30,7 @@ A burger logging app built with MySQL, Node, Express, Handlebars and a homemade 
 Clone folder onto your own computer by forking the repository on Github. Install all required npm modules by running the command 'npm install' in the terinal of your root directory. Create your MySQL database in an SQL GUI by running the code in the schema.sql file (db folder) and pre-seeding data into this table using the code in the seed.sql file. Update your connection credentials in the connection.js file located within the config folder. Run the local server by running 'node server.js' in the command line of the root directory.
 
 ## Usage:
-Once the page has loaded, if there are burgers already seeded in the database, these will be displayed in either the uneaten or eaten lists through a get request. 
+The application can be accessed at https://nameless-brushlands-91393.herokuapp.com/. Once the page has loaded, if there are burgers already seeded in the database, these will be displayed in either the uneaten or eaten lists through a get request. 
 
 ### Add
 
