@@ -7,8 +7,8 @@ const router = express.Router();
 router.get("/", async (req, res) => {
     try {
         const data = await burger.all();
-        const burgerObject = { burger: data };
-        res.render("index", burgerObject);
+        const newBurger = { burger: data };
+        res.render("index", newBurger);
     } catch (err) {
         console.error("ERROR - burger_controller.js - router.get(/): ", err);
     }
@@ -17,8 +17,8 @@ router.get("/", async (req, res) => {
 // Route to post a new burger record to db
 router.post("/api/burger", async (req, res) => {
     try {
-        const newBurger = req.body.burgerName;
-        const data = await burger.create(newBurger);
+        const burger = req.body.burgerName;
+        const data = await burger.create(burger);
     
     // If no records updates, send 404 error, if a record has been updated send successful 200 status
         if (data.affectedRows === 0) {
