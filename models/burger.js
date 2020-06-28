@@ -1,5 +1,6 @@
 const orm = require("../config/orm");
 
+// Burger model which invokes ORM methods with parameters for burger db
 const burger = {
     all: async () => await orm.selectAll("burgers"),
     create: async value => await orm.insertOne("burgers", "burger_name", value),

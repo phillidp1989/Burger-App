@@ -1,5 +1,3 @@
-/* Header styling */
-
 body {
   background: url("https://assets.londonist.com/uploads/2016/09/i875/electric.jpg")
     no-repeat center center fixed;
@@ -8,6 +6,8 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+/* Header styling */
 
 header {
   text-align: center;
@@ -32,8 +32,7 @@ header > h1 {
 
 /* Burger list styling */
 
-.burger-lists {
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+.burger-lists {  
   font-family: 'Raleway', sans-serif; 
   margin: 30px 30px;
   background-color: #ffc72c;
@@ -41,8 +40,7 @@ header > h1 {
   text-align: center;
 }
 
-p {
-  font-family: 'Raleway', sans-serif; 
+p {  
   font-size: 20px;
 }
 
